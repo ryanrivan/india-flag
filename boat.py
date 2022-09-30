@@ -1,0 +1,84 @@
+from turtle import *
+
+setup(800,500)
+speed(3)
+
+#sky
+bgcolor("lightskyblue")
+
+#water
+penup()
+goto(-400,-150)
+pendown()
+color("mediumblue")
+begin_fill()
+for i in range(2):
+    forward(800)
+    right(90)
+    forward(100)
+    right(90)
+end_fill()
+
+#boat
+penup()
+goto(-200,-80)
+pendown()
+color("saddlebrown")
+begin_fill()
+right(45)
+forward(100)
+left(45)
+forward(250)
+left(45)
+forward(100)
+end_fill()
+
+#mast
+penup()
+goto(0,-80)
+pendown()
+color("black")
+begin_fill()
+left(45)
+for i in range(2):
+    forward(200)
+    right(90)
+    forward(10)
+    right(90)
+end_fill()
+
+#right sail
+penup()
+goto(10,120)
+pendown()
+color("white")
+begin_fill()
+right(130)
+forward(250)
+right(140)
+forward(190)
+end_fill()
+
+#left sail
+penup()
+forward(14)
+pendown()
+color("white")
+begin_fill()
+forward(180)
+right(139)
+forward(240)
+end_fill()
+
+#sun
+penup()
+goto(-300, 150)
+pendown()
+color("yellow")
+begin_fill()
+circle(40)
+end_fill()
+
+hideturtle()
+
+done()
